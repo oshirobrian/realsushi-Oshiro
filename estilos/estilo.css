@@ -5,7 +5,7 @@
 }
 
 .cabecera {
-	background-image: linear-gradient(to bottom, white , #0F0F0F);
+	background-image: linear-gradient(to bottom, white, #0F0F0F);
 
 }
 
@@ -16,7 +16,6 @@ nav {
 
 .enlace {
 	position: absolute;
-	padding: 20px 50 px;
 }
 
 .logorealsushi {
@@ -73,6 +72,12 @@ main {
 	padding-bottom: 0;
 }
 
+.listaslider {
+	color: white;
+	text-decoration: none;
+
+}
+
 .aside-cont {
 	display: flex;
 	flex-direction: column;
@@ -88,7 +93,7 @@ main {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 80px;
 	font-family: oswald;
 	color: red;
 }
@@ -143,14 +148,11 @@ footer {
 }
 
 .contenedor-nosotros {
-	display: flex;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 20px;
+	max-width: 100%;
 
-}
-
-.item-nosotros {
-	row-gap: 20px;
-	column-gap: 19px;
-	flex-wrap: wrap;
 }
 
 .maps {
@@ -202,7 +204,6 @@ nav ul li a {
 		position: fixed;
 		width: 100%;
 		height: 10vh;
-		background: #0F0F0F;
 		top: 80px;
 		left: -100%;
 		text-align: center;
