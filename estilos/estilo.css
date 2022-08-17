@@ -5,7 +5,7 @@
 }
 
 .cabecera {
-	background-image: linear-gradient(to bottom, white, #0F0F0F);
+	background-image: linear-gradient(to bottom, #0F0F0F, black);
 
 }
 
@@ -84,6 +84,12 @@ main {
 	margin: 0;
 }
 
+.botonvisita {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 30px;
+}
+
 .aside-item {
 	background-color: #0F0F0F;
 	color: white;
@@ -96,10 +102,11 @@ main {
 .parrafoslider {
 	display: grid;
 	justify-content: center;
-	grid-row-gap: 50px;
+	grid-row-gap: 30px;
+
 }
 
-#botonvisitahome {
+.promos {
 	display: grid;
 	justify-content: center;
 	grid-row-gap: 50px;
