@@ -82,7 +82,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	padding: 0;
 }
 
 .aside-item {
@@ -92,6 +91,24 @@ main {
 	height: 120px;
 	width: 120px;
 	justify-content: flex-end;
+}
+
+.parrafoslider {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 50px;
+}
+
+#botonvisitahome {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 50px;
+}
+
+.btn btn-secondary btn-lg {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 50px;
 }
 
 h1 {
@@ -153,21 +170,34 @@ footer {
 .cont-footer {
 	display: grid;
 	justify-content: center;
-	grid-row-gap: 100px;
+	grid-row-gap: 100px 100px;
 }
 
 .contenedor-nosotros {
 	display: grid;
 	justify-content: center;
 	max-width: 100%;
-	 align-items: stretch;
-	 grid-column-start: 2;
+	align-items: stretch;
+	grid-column-start: 2;
 
+}
+
+.item-nosotros {
+	width: 100%;
+	height: auto;
 }
 
 .platospopulares {
 	display: grid;
 	justify-content: center;
+	grid-row-gap: 50px;
+
+}
+
+.cont-contactos {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 50px;
 }
 
 .maps {
@@ -216,6 +246,7 @@ nav ul li a {
 	}
 
 	ul {
+		background-color: #0F0F0F;
 		position: fixed;
 		width: 100%;
 		height: 10vh;

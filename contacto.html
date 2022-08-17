@@ -33,7 +33,7 @@
 		</nav>
 		<!-- Fin menú de navegación -->
 	</header>
-	<main>
+	<main class="cont-contactos">
 		<div>
 			<h1>Registra tu reserva</h1>
 			<p>Let's meet for dinner tonight</p>
@@ -43,13 +43,13 @@
 			<form action="Confirmamos reserva, muchas gracias!">
 				<input type="text" name="Nombre y Apellido" required placeholder="Nombre y Apellido">
 				<input type="text" name="Numero" required placeholder="Cel de contacto">
-				<input type="email" name="Email" required placeholder="Email">
-				<input type="number" name="Cantidad" required placeholder="Cantidad comensales"><br>
+				<input type="email" name="Email" required placeholder="Email"><br>
+				<input type="number" name="Cantidad" required placeholder="Cantidad comensales">
 				<input type="date" name="Fecha" required placeholder="Fecha">
-				<input type="time" name="Hora" required placeholder="Hora">
-				<input type="submit">
+				<input type="time" name="Hora" required placeholder="Hora"><br>
+				<input type="submit"><br>
 				<span>Reciba noticias sobre nuestro restaurant</span>
-				<input type="button" name="checkbox" required placeholder="✓">
+				<input type="submit" name="Aceptar" required placeholder="Aceptar">
 			</form>
 		</div>
 	</main>
@@ -63,35 +63,37 @@
 	</section>
 	<!-- Fin menú de navegación -->
 
+	<aside>
+		<div class="aside-cont">
+			<div class="aside-item">
+			</div>
+			<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+				<button type="button" class="btn btn-black">Instagram</button>
+				<button type="button" class="btn btn-black">Facebook</button>
+				<button type="button" class="btn btn-black">WhatsApp</button>
+				<button type="button" class="btn btn-black">Reserva online</button>
+			</div>
+	</aside>
 
-	<footer>
+	<footer class="cont-footer">
 		<div>
-			<span>Seguinos En Nuestras Redes Sociales</span>
-			<a href="https://www.instagram.com/" target="_BLACK"><img src="imagenes/instagramlogo.png" height="15"
-					width="15"> </a>
-			<a href="https://www.facebook.com/" target="_BLACK"><img src="imagenes/facebooklogo.png" height="20"
-					width="20"> </a>
-			<a href="https://www.whatsapp.com/?lang=es" target="_BLACK"><img src="imagenes/whatsapplogo.png" hight="15"
-					width="15"></a>
-		</div>
-
-		<div>
-			<h2>Contactanos</h2>
-			<div>
-				<p>realsushi@gmail.com - whatsapp: 11 3148-1152</p>
-				<p>Real Sushi - Falso 123 - TAKE AWAY</p>
-				<p> Caballito, Buenos Aires, Argentina</p>
+			<div class="rounded float-start">
+				<h2>Contactanos</h2>
+				<p>realsushi@gmail.com - whatsapp: 11 3148-1152<br>
+					Real Sushi - Falso 123 - TAKE AWAY<br>
+					Caballito, Buenos Aires, Argentina</p>
 			</div>
 
-			<div>
-				<h2>Horarios</h2>
-				<p>Martes a Viernes: 19:00 - 23:30</p>
-				<p>Sabados a Domingos: 19:00 - 01:00</p>
-			</div>
+			<div class="rounded float-end"></div>
+			<h2>Horarios</h2>
+			<p>Martes a Viernes: 19:00 - 23:30<br>
+				Sabados a Domingos: 19:00 - 01:00<br>
+				Consultar Feriados</p>
+		</div>
+		<br>
 		</div>
 
-
-		<div class="copyrigth">Copyright 2022 - Real Sushi</div>
+		<small class="copyright">Copyright 2022 - Real Sushi</small>
 	</footer>
 </body>
 
