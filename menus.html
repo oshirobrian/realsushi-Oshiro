@@ -10,6 +10,8 @@
 	<title>realsushi/menus</title>
 	<link rel="icon" href="imagenes/logo.ico">
 	<!-- CSS only -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -46,21 +48,21 @@
 
 	<section class="platospopulares">
 
-		<div class="carta">
+		<div class="carta" data-aos="fade-right">
 			<h2>Opcion 1</h2>
 			<p>Bandeja de Mayi-sushi</p><br>
 			<div><img src="imagenes/mayumi.png" height="200" width="400" alt="foto1" title="Bandeja Mayi"></div><br>
 			<button>Ver más</button>
 		</div>
 
-		<div class="carta">
+		<div class="carta" data-aos="fade-left">
 			<h2>Opcion 2</h2>
 			<p>Bandeja de Noma-niguiris</p><br>
 			<div><img src="imagenes/naomi.png" height="200" width="400" alt="foto2" title="bandeja niguiris"></div><br>
 			<button>Ver más</button>
 		</div>
 
-		<div class="carta">
+		<div class="carta" data-aos="fade-right">
 			<h2>Opcion 3</h2>
 			<p>Bandeja de Natsu-sushi</p><br>
 			<div><img src="imagenes/natsumi.png" height="200" width="400" alt="foto3" title="bandeja de sushi3"></div>
@@ -117,6 +119,10 @@
 
 	<small class="copyright">Copyright 2022 - Real Sushi</small>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 
 </html>
