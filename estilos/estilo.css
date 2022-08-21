@@ -5,7 +5,7 @@
 }
 
 .cabecera {
-	background-image: linear-gradient(to bottom, #0F0F0F, black);
+	background: #0F0F0F;
 
 }
 
@@ -19,7 +19,7 @@ nav {
 }
 
 .logorealsushi {
-	height: 220px;
+	height: 150px;
 	width: 100%;
 }
 
@@ -36,7 +36,7 @@ nav ul {
 nav ul li {
 	display: inline-flex;
 	line-height: 80px;
-	margin: 0 5px;
+	margin: 25px 15px 5px;
 }
 
 
@@ -118,6 +118,11 @@ main {
 	grid-row-gap: 50px;
 }
 
+.realsushi {
+	display: flex;
+	justify-content: center;
+}
+
 h1 {
 	font-size: 80px;
 	font-family: oswald;
@@ -140,6 +145,10 @@ p {
 	background: #0F0F0F;
 }
 
+.titulo-main {
+	display: flex;
+	justify-content: center;
+}
 span {
 	font-family: oswald;
 	color: white;
