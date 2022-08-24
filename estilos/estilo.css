@@ -25,7 +25,7 @@ nav {
 
 
 header {
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a {
 	font-size: 20px;
 	padding: 7px 13px;
 	border-radius: 3px;
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 	text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@ nav ul li a {
 
 main {
 	background: #0F0F0F;
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 
 }
 
@@ -81,7 +81,7 @@ main {
 .aside-cont {
 	display: flex;
 	flex-direction: column;
-	height: 200px ;
+	height: 200px;
 }
 
 .botonvisita {
@@ -126,38 +126,57 @@ main {
 .realsushi {
 	display: flex;
 	justify-content: center;
+	color: rgb(145, 27, 27);
 }
 
 h1 {
 	font-size: 80px;
-	font-family: oswald;
-	color: red;
+	Font-Family: 'Roboto', Sans-Serif;
+	color: rgb(145, 27, 27);
+
 }
 
 h2 {
 	display: flex;
 	justify-content: center;
-	font-family: oswald;
-	color: white;
+	Font-Family: 'Roboto', Sans-Serif;
+	color: rgb(145, 27, 27);
 }
 
+
 h3 {
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 	color: white;
 }
 
 p {
-	font-family: oswald;
+	font-size: 20px;
+	Font-Family: 'Roboto', Sans-Serif;
 	color: white;
 	background: #0F0F0F;
+}
+
+.carta {
+	display: grid;
+	justify-content: center;
+	background: rgb(36, 30, 30);
+	font-size: 15px;
+	padding: 10px;
+	margin: 20px 5px;
+	border-radius: 5%;
+}
+
+.subtitulomenu {
+	justify-content: center;
 }
 
 .titulo-main {
 	display: flex;
 	justify-content: center;
 }
+
 span {
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 	color: white;
 }
 
@@ -165,7 +184,7 @@ span {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	font-family: oswald;
+	Font-Family: 'Roboto', Sans-Serif;
 	box-sizing: border-box;
 	display: flex;
 	row-gap: 20px;
@@ -175,10 +194,10 @@ span {
 }
 
 aside {
-	color: red;
+	color: rgb(145, 27, 27);
 	background: #0F0F0F;
-	font-family: oswald
-	
+	Font-Family: 'Roboto', Sans-Serif;
+
 }
 
 footer {
@@ -186,52 +205,75 @@ footer {
 	height: auto;
 	width: 100%;
 	background: #0F0F0F;
-	color: red;
-	font-family: oswald;
+	color: rgb(145, 27, 27);
+	Font-Family: 'Roboto', Sans-Serif;
 	font-size: 15px;
 }
+
 
 .cont-footer {
 	display: grid;
 	justify-content: center;
 	grid-row-gap: 100px 100px;
-	padding: 20px ;
+	padding: 20px;
 }
 
 .contenedor-nosotros {
 	display: grid;
+	height: auto;
 	justify-content: center;
-	max-width: 100%;
-	align-items: stretch;
-	grid-column-start: 2;
-
+	width: 100%;
+	background: #0F0F0F;
+	font-size: 17px;
+	margin: 0px;
+	border: 4px solid inset
 }
 
 .item-nosotros {
+	display: grid;
+	justify-content: center;
 	width: 100%;
 	height: auto;
+	margin: 5px;
+	padding: 10px;
 }
 
 .platospopulares {
 	display: grid;
 	justify-content: center;
 	grid-row-gap: 50px;
+}
 
+.carousel-inner {
+	height: 1000px;
 }
 
 .cont-contactos {
+	background: #0F0F0F;
 	display: grid;
 	justify-content: center;
-	grid-row-gap: 50px;
+	grid-row-gap: 15px;
 }
 
 .maps {
+	background-color: rgb(36, 30, 30);
 	width: 100%;
+	border-radius: 2.5%;
+}
+
+.formularioreserva {
+	display: flex;
+	justify-content: center;
+	background: rgb(36, 30, 30);
+	font-size: 17px;
+	padding: 10px;
+	margin: 20px 5px;
+	border-radius: 2.5%;
 }
 
 header nav ul li a {
 	list-style: none;
-	color: red;
+	color: rgb(145, 27, 27);
 	text-decoration: none;
 }
 
@@ -243,12 +285,13 @@ li a:hover {
 
 .checkbtn {
 	font-size: 30px;
-	color: red;
+	color: rgb(145, 27, 27);
 	float: right;
 	line-height: 80px;
 	margin-right: 40px;
 	cursor: pointer;
 	display: none;
+	font-family: 'Roboto', Sans-Serif;
 }
 
 #check {
@@ -271,7 +314,7 @@ nav ul li a {
 	}
 
 	ul {
-		background-color: #0F0F0F;
+		background: #0F0F0F;
 		position: fixed;
 		width: 100%;
 		height: 10vh;
@@ -289,13 +332,13 @@ nav ul li a {
 	}
 
 	nav ul li a {
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	li a:hover,
 	li a.active {
 		background: none;
-		color: red;
+		color: rgb(145, 27, 27);
 	}
 
 	#check:checked~ul {
