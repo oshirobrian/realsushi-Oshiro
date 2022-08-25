@@ -1,0 +1,339 @@
+$res_mobile: 858px; 
+$font: "Roboto", Sans-Serif;
+
+
+@mixin fondo($fondo){
+    background-color:#0f0f0f;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: $font;
+}
+
+nav {
+  height: 150px;
+  width: 100%;
+}
+
+header {
+  font-family: $font
+}
+
+main {
+    @include fondo(#0f0f0f);
+  font-family: $font
+}
+
+h1 {
+  font-size: 80px;
+  @include fondo(#0f0f0f);
+  color: rgb(145, 27, 27);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  @include fondo(#0f0f0f);
+  color: rgb(145, 27, 27);
+}
+
+h3 {
+  font-family:  $font;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+  font-family: $font;
+  color: white;
+}
+
+span {
+  font-family:  $font;
+  color: white;
+}
+
+aside {
+  color: rgb(145, 27, 27);
+  @include fondo(#0f0f0f);
+  font-family:  $font;
+}
+
+footer {
+  padding-top: 50px;
+  height: auto;
+  width: 100%;
+  @include fondo(#0f0f0f);
+  color: rgb(145, 27, 27);
+  font-family:  $font;
+  font-size: 15px;
+}
+
+.cabecera {
+  @include fondo(#0f0f0f);
+}
+
+.enlace {
+  position: absolute;
+}
+
+.logorealsushi {
+  height: 150px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-flex;
+  line-height: 80px;
+  margin: 25px 15px 5px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family:  $font;
+  text-transform: uppercase;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  padding-right: 20;
+  padding-bottom: 0;
+}
+
+.parrafoslider {
+  font-size: 40px;
+  padding-top: 150;
+  padding-right: 20;
+  padding-bottom: 0;
+}
+
+.listaslider {
+  color: white;
+  text-decoration: none;
+}
+
+.aside-cont {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.botonvisita {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 30px;
+}
+
+.aside-item {
+    @include fondo(#0f0f0f);
+  color: white;
+  margin: 5px;
+  height: 120px;
+  width: 120px;
+  justify-content: flex-end;
+}
+
+.parrafoslider {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 30px;
+}
+
+.footer-texto {
+  display: flex;
+  justify-content: center;
+}
+
+.promos {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 50px;
+}
+
+.btn btn-secondary btn-lg {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 50px;
+}
+
+.realsushi {
+  display: flex;
+  justify-content: center;
+  color: rgb(145, 27, 27);
+}
+
+.carta {
+  display: grid;
+  justify-content: center;
+  background: rgb(36, 30, 30);
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px 5px;
+  border-radius: 5%;
+}
+
+.subtitulomenu {
+  justify-content: center;
+  background: rgb(36, 30, 30);
+}
+
+.titulo-main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-galeria {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font;
+  box-sizing: border-box;
+  display: flex;
+  row-gap: 20px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cont-footer {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 100px 100px;
+  padding: 20px;
+}
+
+.contenedor-nosotros {
+  display: grid;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  @include fondo(#0f0f0f);
+  font-size: 17px;
+  margin: 0px;
+  border: 4px solid inset;
+}
+
+.item-nosotros {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+}
+
+.platospopulares {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 50px;
+}
+
+.cont-contactos {
+    @include fondo(#0f0f0f);
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 15px;
+}
+
+.maps {
+  background-color: rgb(36, 30, 30);
+  width: 100%;
+  border-radius: 2.5%;
+}
+
+.formularioreserva {
+  display: flex;
+  justify-content: center;
+  background: rgb(36, 30, 30);
+  font-size: 17px;
+  padding: 10px;
+  margin: 20px 5px;
+  border-radius: 2.5%;
+}
+
+header nav ul li a {
+  list-style: none;
+  color: rgb(145, 27, 27);
+  text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    @include fondo(#0f0f0f);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(145, 27, 27);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  font-family: $font;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+}
+
+nav ul li a {
+  font-size: 16px;
+}
+
+@media (max-width: $res_mobile) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    @include fondo(#0f0f0f);
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+  }
+
+  li a:hover,
+  li a.active {
+    @include fondo(#0f0f0f);
+    color: rgb(145, 27, 27);
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
