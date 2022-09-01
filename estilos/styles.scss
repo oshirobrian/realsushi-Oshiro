@@ -1,9 +1,8 @@
-$res_mobile: 858px; 
+$res_mobile: 858px;
 $font: "Roboto", Sans-Serif;
 
-
-@mixin fondo($fondo){
-    background-color:#0f0f0f;
+@mixin fondo($fondo) {
+  background-color: #0f0f0f;
 }
 html,
 body {
@@ -18,12 +17,12 @@ nav {
 }
 
 header {
-  font-family: $font
+  font-family: $font;
 }
 
 main {
-    @include fondo(#0f0f0f);
-  font-family: $font
+  @include fondo(#0f0f0f);
+  font-family: $font;
 }
 
 h1 {
@@ -37,10 +36,12 @@ h2 {
   justify-content: center;
   @include fondo(#0f0f0f);
   color: rgb(145, 27, 27);
+  font-size: 30px;
+
 }
 
 h3 {
-  font-family:  $font;
+  font-family: $font;
   color: white;
 }
 
@@ -51,14 +52,14 @@ p {
 }
 
 span {
-  font-family:  $font;
+  font-family: $font;
   color: white;
 }
 
 aside {
   color: rgb(145, 27, 27);
   @include fondo(#0f0f0f);
-  font-family:  $font;
+  font-family: $font;
 }
 
 footer {
@@ -67,7 +68,7 @@ footer {
   width: 100%;
   @include fondo(#0f0f0f);
   color: rgb(145, 27, 27);
-  font-family:  $font;
+  font-family: $font;
   font-size: 15px;
 }
 
@@ -99,7 +100,7 @@ nav ul li a {
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family:  $font;
+  font-family: $font;
   text-transform: uppercase;
 }
 
@@ -138,10 +139,10 @@ nav ul li a {
 }
 
 .aside-item {
-    @include fondo(#0f0f0f);
+  @include fondo(#0f0f0f);
   color: white;
   margin: 5px;
-  height: 120px;
+  height: 10px;
   width: 120px;
   justify-content: flex-end;
 }
@@ -173,7 +174,17 @@ nav ul li a {
   display: flex;
   justify-content: center;
   color: rgb(145, 27, 27);
+  background-color: rgb(36, 30, 30);
+  font-size: 30px;
 }
+
+.titulocarta {
+    display: flex;
+    justify-content: center;
+    color: rgb(145, 27, 27);
+    background-color:#0f0f0f;
+    font-size: 50px;
+  }
 
 .carta {
   display: grid;
@@ -215,24 +226,30 @@ nav ul li a {
   padding: 20px;
 }
 
+.opcionesmenu {
+  background-color: rgb(36, 30, 30);
+}
+
 .contenedor-nosotros {
   display: grid;
   height: auto;
   justify-content: center;
-  width: 100%;
+  grid-row-gap: 10px;
+  width: auto;
   @include fondo(#0f0f0f);
   font-size: 17px;
   margin: 0px;
-  border: 4px solid inset;
+  padding-bottom: 20px;
 }
-
+  
 .item-nosotros {
   display: grid;
   justify-content: center;
-  width: 100%;
-  height: auto;
-  margin: 5px;
+  background: rgb(36, 30, 30);
+  font-size: 15px;
   padding: 10px;
+  margin: 20px 100px;
+  border-radius: 4%;
 }
 
 .platospopulares {
@@ -242,7 +259,7 @@ nav ul li a {
 }
 
 .cont-contactos {
-    @include fondo(#0f0f0f);
+  @include fondo(#0f0f0f);
   display: grid;
   justify-content: center;
   grid-row-gap: 15px;
@@ -272,7 +289,7 @@ header nav ul li a {
 
 li a.active,
 li a:hover {
-    @include fondo(#0f0f0f);
+  @include fondo(#0f0f0f);
   transition: 0.5s;
 }
 
