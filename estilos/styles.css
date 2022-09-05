@@ -337,7 +337,8 @@ nav ul li a {
     top: 150px;
     left: -100%;
     text-align: left;
-    transition: al l 0.5s;
+    transition: all 0.5s;
+    z-index: 5;
   }
   nav ul li {
     display: block;
