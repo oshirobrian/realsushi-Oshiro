@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: "Roboto", Sans-Serif;
+  box-sizing: border-box;
 }
 
 nav {
@@ -20,7 +20,8 @@ main {
 }
 
 h1 {
-  font-size: 80px;
+  display: flex;
+  font-size: 50px;
   background-color: #0f0f0f;
   color: rgb(145, 27, 27);
 }
@@ -28,14 +29,18 @@ h1 {
 h2 {
   display: flex;
   justify-content: center;
-  background-color: #0f0f0f;
   color: rgb(145, 27, 27);
   font-size: 30px;
+  background-color: #0f0f0f;
 }
 
 h3 {
   font-family: "Roboto", Sans-Serif;
   color: white;
+}
+
+.titulonososotros {
+  background-color: rgb(36, 30, 30);
 }
 
 p {
@@ -143,12 +148,12 @@ nav ul li a {
 .parrafoslider {
   display: grid;
   justify-content: center;
-  grid-row-gap: 30px;
 }
 
 .footer-texto {
   display: flex;
   justify-content: center;
+  font-size: 17px;
 }
 
 .promos {
@@ -167,8 +172,15 @@ nav ul li a {
   display: flex;
   justify-content: center;
   color: rgb(145, 27, 27);
-  background-color: rgb(36, 30, 30);
-  font-size: 30px;
+  background-color: #0f0f0f;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+.titulojetivo {
+  display: flex;
+  justify-content: center;
+  font-size: 50p;
 }
 
 .titulocarta {
@@ -197,6 +209,7 @@ nav ul li a {
 .titulo-main {
   display: flex;
   justify-content: center;
+  font-size: 50px;
 }
 
 .main-galeria {
@@ -239,8 +252,8 @@ nav ul li a {
 .item-nosotros {
   display: grid;
   justify-content: center;
-  background: rgb(36, 30, 30);
   font-size: 15px;
+  background: rgb(36, 30, 30);
   padding: 10px;
   margin: 20px 100px;
   border-radius: 4%;
@@ -288,14 +301,15 @@ li a:hover {
 }
 
 .checkbtn {
-  font-size: 30px;
   color: rgb(145, 27, 27);
+  font-size: 30px;
   float: right;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
   font-family: "Roboto", Sans-Serif;
+  background: #0f0f0f;
 }
 
 #check {
@@ -316,19 +330,20 @@ nav ul li a {
     display: block;
   }
   ul {
-    background-color: #0f0f0f;
     position: fixed;
     width: 100%;
-    height: 10vh;
-    top: 80px;
+    height: 150vh;
+    background-color: #0f0f0f;
+    top: 150px;
     left: -100%;
-    text-align: center;
-    transition: all 0.5s;
+    text-align: left;
+    transition: al l 0.5s;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 50px 0px;
     line-height: 30px;
+    background-color: #0f0f0f;
   }
   nav ul li a {
     font-size: 30px;
