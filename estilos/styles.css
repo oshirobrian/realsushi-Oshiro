@@ -33,6 +33,7 @@ nav ul li a {
 main h1 {
   display: flex;
   font-size: 50px;
+  justify-content: center;
   background-color: #0f0f0f;
   color: rgb(145, 27, 27);
 }
@@ -190,7 +191,13 @@ span {
   font-size: 50px;
 }
 
-.carta {
+.platospopulares {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 50px;
+  overflow: hidden;
+}
+.platospopulares .carta {
   display: grid;
   justify-content: center;
   background: rgb(36, 30, 30);
@@ -199,63 +206,34 @@ span {
   margin: 20px 5px;
   border-radius: 5%;
 }
-
-.subtitulomenu {
+.platospopulares .opcionesmenu {
+  background-color: rgb(36, 30, 30);
+}
+.platospopulares .subtitulomenu {
   justify-content: center;
   background: rgb(36, 30, 30);
 }
 
-.titulo-main {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-}
-
-.main-galeria {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: "Roboto", Sans-Serif;
-  box-sizing: border-box;
-  display: flex;
-  row-gap: 20px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.opcionesmenu {
-  background-color: rgb(36, 30, 30);
-}
-
-.platospopulares {
-  display: grid;
-  justify-content: center;
-  grid-row-gap: 50px;
-  overflow: hidden;
-}
-
+/*seccion nosotros*/
 .cont-contactos {
   background-color: #0f0f0f;
   display: grid;
   justify-content: center;
   grid-row-gap: 15px;
 }
-
-.maps {
-  background-color: rgb(36, 30, 30);
-  width: 100%;
-  border-radius: 2.5%;
-}
-
-.formularioreserva {
+.cont-contactos .formularioreserva {
   display: flex;
   justify-content: center;
   background: rgb(36, 30, 30);
   font-size: 17px;
   padding: 10px;
   margin: 20px 5px;
+  border-radius: 2.5%;
+}
+
+.maps {
+  background-color: rgb(36, 30, 30);
+  width: 100%;
   border-radius: 2.5%;
 }
 
