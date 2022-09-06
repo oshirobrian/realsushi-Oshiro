@@ -30,6 +30,7 @@ h1 {
   font-size: 50px;
   @include fondo(#0f0f0f);
   color:rgb(145, 27, 27);
+}
 
 h2 {
   display: flex;
@@ -233,8 +234,8 @@ nav ul li a {
 .cont-footer {
   display: grid;
   justify-content: center;
-  grid-row-gap: 100px 100px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .opcionesmenu {
@@ -251,6 +252,7 @@ nav ul li a {
   font-size: 17px;
   margin: 0px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .item-nosotros {
@@ -267,6 +269,7 @@ nav ul li a {
   display: grid;
   justify-content: center;
   grid-row-gap: 50px;
+  overflow: hidden;
 }
 
 .cont-contactos {
@@ -363,5 +366,4 @@ nav ul li a {
   #check:checked ~ ul {
     left: 0;
   }
-}
 }
