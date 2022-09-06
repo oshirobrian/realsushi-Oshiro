@@ -9,116 +9,131 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font;
+  @include fondo(#0f0f0f);
 }
 
 nav {
   height: 150px;
   width: 100%;
-}
+  @include fondo(#0f0f0f);
 
-header {
-  font-family: $font;
+  ul {
+    float: right;
+    margin-right: 20px;
+
+    li {
+      display: inline-flex;
+      line-height: 80px;
+      margin: 25px 15px 5px;
+
+      a {
+        font-size: 20px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-family: $font;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 main {
-  @include fondo(#0f0f0f);
-  font-family: $font;
-}
+  h1 {
+    display: flex;
+    font-size: 50px;
+    @include fondo(#0f0f0f);
+    color: rgb(145, 27, 27);
+  }
 
-h1 {
-  display: flex;
-  font-size: 50px;
-  @include fondo(#0f0f0f);
-  color:rgb(145, 27, 27);
-}
+  h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    @include fondo(#0f0f0f);
+  }
 
-h2 {
-  display: flex;
-  justify-content: center;
-  color: rgb(145, 27, 27);
-  font-size: 30px;
-  @include fondo(#0f0f0f);
-}
-
-h3 {
-  font-family: $font;
-  color: white;
-}
-
-.titulonososotros {
-  background-color: rgb(36, 30, 30);
-}
-
-p {
-  font-size: 20px;
-  font-family: $font;
-  color: white;
-}
-
-span {
-  font-family: $font;
-  color: white;
+  p {
+    font-size: 20px;
+    font-family: $font;
+    color: white;
+  }
+  .realsushi {
+    display: flex;
+    justify-content: center;
+    color: rgb(145, 27, 27);
+    background-color: #0f0f0f;
+    font-size: 50px;
+    padding-top: 10px;
+  }
 }
 
 aside {
   color: rgb(145, 27, 27);
-  @include fondo(#0f0f0f);
   font-family: $font;
+
+  .aside-cont {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .aside-item {
+    color: white;
+    margin: 5px;
+    height: 10px;
+    width: 120px;
+    justify-content: flex-end;
+  }
 }
 
 footer {
   padding-top: 50px;
   height: auto;
   width: 100%;
-  @include fondo(#0f0f0f);
-  color: rgb(145, 27, 27);
   font-family: $font;
   font-size: 15px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(145, 27, 27);
+    font-size: 30px;
+    @include fondo(#0f0f0f);
+  }
 }
 
-.cabecera {
-  @include fondo(#0f0f0f);
+.cont-footer {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+
+  .footer-texto {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    color: white;
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .enlace {
   position: absolute;
-}
 
-.logorealsushi {
-  height: 150px;
-  width: 100%;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-flex;
-  line-height: 80px;
-  margin: 25px 15px 5px;
-}
-
-nav ul li a {
-  font-size: 20px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  font-family: $font;
-  text-transform: uppercase;
-}
-
-.slider {
-  width: 100%;
-  height: auto;
-}
-
-.slider {
-  padding-right: 20;
-  padding-bottom: 0;
+  .logorealsushi {
+    height: 150px;
+    width: 100%;
+  }
 }
 
 .parrafoslider {
+  display: grid;
+  justify-content: center;
   font-size: 40px;
   padding-top: 150;
   padding-right: 20;
@@ -130,36 +145,44 @@ nav ul li a {
   text-decoration: none;
 }
 
-.aside-cont {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-}
-
 .botonvisita {
   display: grid;
   justify-content: center;
   grid-row-gap: 30px;
 }
 
-.aside-item {
-  @include fondo(#0f0f0f);
-  color: white;
-  margin: 5px;
-  height: 10px;
-  width: 120px;
-  justify-content: flex-end;
-}
-
-.parrafoslider {
+.contenedor-nosotros {
   display: grid;
+  height: auto;
   justify-content: center;
-}
-
-.footer-texto {
-  display: flex;
-  justify-content: center;
+  grid-row-gap: 10px;
+  width: auto;
+  @include fondo(#0f0f0f);
   font-size: 17px;
+  margin: 0px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  .titulojetivo {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+
+  .item-nosotros {
+    display: grid;
+    justify-content: center;
+    font-size: 15px;
+    background: rgb(36, 30, 30);
+    padding: 10px;
+    margin: 20px 100px;
+    border-radius: 4%;
+  }
+
+  .titulonososotros {
+    background-color: rgb(36, 30, 30);
+    color: rgb(145, 27, 27);
+  }
 }
 
 .promos {
@@ -168,25 +191,15 @@ nav ul li a {
   grid-row-gap: 50px;
 }
 
+span {
+  font-family: $font;
+  color: white;
+}
+
 .btn btn-secondary btn-lg {
   display: grid;
   justify-content: center;
   grid-row-gap: 50px;
-}
-
-.realsushi {
-  display: flex;
-  justify-content: center;
-  color: rgb(145, 27, 27);
-  background-color: #0f0f0f;
-  font-size: 50px;
-  padding-top: 10px;
-}
-
-.titulojetivo {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
 }
 
 .titulocarta {
@@ -231,38 +244,8 @@ nav ul li a {
   justify-content: space-evenly;
 }
 
-.cont-footer {
-  display: grid;
-  justify-content: center;
-  padding: 20px;
-  overflow: hidden;
-}
-
 .opcionesmenu {
   background-color: rgb(36, 30, 30);
-}
-
-.contenedor-nosotros {
-  display: grid;
-  height: auto;
-  justify-content: center;
-  grid-row-gap: 10px;
-  width: auto;
-  @include fondo(#0f0f0f);
-  font-size: 17px;
-  margin: 0px;
-  padding-bottom: 20px;
-  overflow: hidden;
-}
-
-.item-nosotros {
-  display: grid;
-  justify-content: center;
-  font-size: 15px;
-  background: rgb(36, 30, 30);
-  padding: 10px;
-  margin: 20px 100px;
-  border-radius: 4%;
 }
 
 .platospopulares {
@@ -294,6 +277,8 @@ nav ul li a {
   margin: 20px 5px;
   border-radius: 2.5%;
 }
+
+/* menú responsive */
 
 header nav ul li a {
   list-style: none;
@@ -336,6 +321,7 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
+  
   ul {
     position: fixed;
     width: 100%;
