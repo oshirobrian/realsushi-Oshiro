@@ -29,8 +29,7 @@ h1 {
   display: flex;
   font-size: 50px;
   @include fondo(#0f0f0f);
-  color: rgb(145, 27, 27);
-}
+  color:rgb(145, 27, 27);
 
 h2 {
   display: flex;
@@ -364,4 +363,5 @@ nav ul li a {
   #check:checked ~ ul {
     left: 0;
   }
+}
 }

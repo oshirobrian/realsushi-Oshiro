@@ -180,7 +180,7 @@ nav ul li a {
 .titulojetivo {
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 50p;
 }
 
 .titulocarta {
@@ -221,7 +221,7 @@ nav ul li a {
   display: flex;
   row-gap: 20px;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -239,10 +239,9 @@ nav ul li a {
 
 .contenedor-nosotros {
   display: grid;
-  height: auto;
   justify-content: center;
   grid-row-gap: 10px;
-  width: auto;
+  width: 100%;
   background-color: #0f0f0f;
   font-size: 17px;
   margin: 0px;
@@ -321,6 +320,7 @@ li a:hover {
     padding-left: 20px;
   }
 }
+
 nav ul li a {
   font-size: 16px;
 }
@@ -329,6 +329,7 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
+
   ul {
     position: fixed;
     width: 100%;
@@ -340,21 +341,32 @@ nav ul li a {
     transition: all 0.5s;
     z-index: 5;
   }
+
   nav ul li {
     display: block;
     margin: 50px 0px;
     line-height: 30px;
     background-color: #0f0f0f;
   }
+
   nav ul li a {
     font-size: 30px;
   }
+
   li a:hover,
-li a.active {
+  li a.active {
     background-color: #0f0f0f;
     color: rgb(145, 27, 27);
   }
-  #check:checked ~ ul {
+
+  .contenedor-nosotros {
+    width: 100%;
+  }
+
+  #check:checked~ul {
     left: 0;
   }
-}/*# sourceMappingURL=styles.css.map */
+
+}
+
+/*# sourceMappingURL=styles.css.map */
