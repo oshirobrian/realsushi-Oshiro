@@ -137,13 +137,13 @@ footer h2 {
 
 .contenedor-nosotros {
   display: grid;
-  height: auto;
   justify-content: center;
   grid-row-gap: 10px;
-  width: auto;
+  width: 100%;
   background-color: #0f0f0f;
   font-size: 17px;
-  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -159,6 +159,8 @@ footer h2 {
   background: rgb(36, 30, 30);
   padding: 10px;
   margin: 20px 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 4%;
 }
 .contenedor-nosotros .titulonososotros {
