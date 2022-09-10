@@ -3,6 +3,7 @@ $font: "Roboto", Sans-Serif;
 
 @mixin fondo($fondo) {
   background-color: #0f0f0f;
+  
 }
 html,
 body {
@@ -60,6 +61,7 @@ main {
     font-size: 20px;
     font-family: $font;
     color: white;
+    padding: 10px;
   }
   .realsushi {
     display: flex;
@@ -74,8 +76,6 @@ main {
 aside {
   color: rgb(145, 27, 27);
   font-family: $font;
-  box-shadow: 10px 5px 5px rgb(145, 27, 27)
-  ;
 
 
   .aside-cont {
@@ -159,17 +159,21 @@ footer {
   grid-row-gap: 30px;
 }
 
+.fc{
+  width: fit-content;
+}
+
 .contenedor-nosotros {
   display: grid;
   justify-content: center;
   grid-row-gap: 10px;
-  width: 100%;
   @include fondo(#0f0f0f);
-  font-size: 17px;
+  font-size: 5px;
   margin-left: 10px;
   margin-right: 10px;
   padding-bottom: 20px;
   overflow: hidden;
+}
 
   .titulojetivo {
     display: flex;
@@ -178,22 +182,22 @@ footer {
   }
 
   .item-nosotros {
-    display: grid;
+    //display: grid;
     justify-content: center;
-    font-size: 15px;
     background: rgb(36, 30, 30);
     padding: 10px;
     margin: 20px 100px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 4%;
+    overflow: hidden;
   }
 
   .titulonososotros {
     background-color: rgb(36, 30, 30);
     color: rgb(145, 27, 27);
   }
-}
+
 
 .promos {
   display: grid;
@@ -244,14 +248,18 @@ span {
   }
 }
 
-/*seccion nosotros*/
-
 .cont-contactos {
   @include fondo(#0f0f0f);
   display: grid;
   justify-content: center;
   grid-row-gap: 15px;
 
+  input {
+    color: red;
+    font-family: $font;
+
+  }
+  
   .formularioreserva {
     display: flex;
     justify-content: center;
