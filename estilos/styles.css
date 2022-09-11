@@ -8,6 +8,10 @@ body {
   background-color: #0f0f0f;
 }
 
+header {
+  box-shadow: 10px 5px 5px rgb(145, 27, 27);
+}
+
 nav {
   height: 150px;
   width: 100%;
@@ -31,6 +35,9 @@ nav ul li a {
   font-weight: bolder;
 }
 
+main {
+  margin: 10px;
+}
 main h1 {
   display: flex;
   font-size: 50px;
@@ -63,6 +70,7 @@ main .realsushi {
 aside {
   color: rgb(145, 27, 27);
   font-family: "Roboto", Sans-Serif;
+  box-shadow: 10px 5px 5px rgb(145, 27, 27);
 }
 aside .aside-cont {
   display: flex;
@@ -151,9 +159,6 @@ footer h2 small {
   grid-row-gap: 10px;
   background-color: #0f0f0f;
   font-size: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 20px;
   overflow: hidden;
 }
 
@@ -166,7 +171,6 @@ footer h2 small {
 .item-nosotros {
   justify-content: center;
   background: rgb(36, 30, 30);
-  padding: 10px;
   margin: 20px 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -208,9 +212,12 @@ span {
   display: grid;
   justify-content: center;
   grid-row-gap: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   overflow: hidden;
 }
-.platospopulares .carta {
+
+.carta {
   display: grid;
   justify-content: center;
   background: rgb(36, 30, 30);
@@ -218,13 +225,18 @@ span {
   padding: 10px;
   margin: 20px 5px;
   border-radius: 5%;
+  overflow: hidden;
 }
-.platospopulares .opcionesmenu {
+
+.opcionesmenu {
   background-color: rgb(36, 30, 30);
 }
-.platospopulares .subtitulomenu {
-  justify-content: center;
+
+.subtitulomenu {
+  display: flex;
   background: rgb(36, 30, 30);
+  margin-left: 85px;
+  margin-right: 10px;
 }
 
 .cont-contactos {

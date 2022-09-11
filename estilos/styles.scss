@@ -13,7 +13,9 @@ body {
   font-family: $font;
   @include fondo(#0f0f0f);
 }
-
+header {
+  box-shadow: 10px 5px 5px rgb(145, 27, 27);
+}
 nav {
   height: 150px;
   width: 100%;
@@ -41,6 +43,8 @@ nav {
   }
 
 main {
+  margin: 10px;
+
   h1 {
     display: flex;
     font-size: 50px;
@@ -76,6 +80,7 @@ main {
 aside {
   color: rgb(145, 27, 27);
   font-family: $font;
+  box-shadow: 10px 5px 5px rgb(145, 27, 27);
 
 
   .aside-cont {
@@ -169,35 +174,30 @@ footer {
   grid-row-gap: 10px;
   @include fondo(#0f0f0f);
   font-size: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 20px;
   overflow: hidden;
 }
 
-  .titulojetivo {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-  }
+.titulojetivo {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
 
-  .item-nosotros {
-    //display: grid;
-    justify-content: center;
-    background: rgb(36, 30, 30);
-    padding: 10px;
-    margin: 20px 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 4%;
-    overflow: hidden;
-  }
+.item-nosotros {
+  justify-content: center;
+  background: rgb(36, 30, 30);
+
+  margin: 20px 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4%;
+  overflow: hidden;
+}
 
   .titulonososotros {
     background-color: rgb(36, 30, 30);
     color: rgb(145, 27, 27);
   }
-
 
 .promos {
   display: grid;
@@ -224,28 +224,33 @@ span {
   font-size: 50px;
 }
 
+
 .platospopulares {
   display: grid;
   justify-content: center;
   grid-row-gap: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   overflow: hidden;
-
-  .carta {
-    display: grid;
-    justify-content: center;
-    background: rgb(36, 30, 30);
-    font-size: 15px;
-    padding: 10px;
-    margin: 20px 5px;
-    border-radius: 5%;
-  }
-  .opcionesmenu {
-    background-color: rgb(36, 30, 30);
-  }
-  .subtitulomenu {
-    justify-content: center;
-    background: rgb(36, 30, 30);
-  }
+}
+.carta {
+  display: grid;
+  justify-content: center;
+  background: rgb(36, 30, 30);
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px 5px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.opcionesmenu {
+  background-color: rgb(36, 30, 30);
+}
+.subtitulomenu {
+  display: flex;
+  background: rgb(36, 30, 30);
+  margin-left: 85px;
+  margin-right: 10px;
 }
 
 .cont-contactos {
