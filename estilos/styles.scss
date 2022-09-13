@@ -3,7 +3,6 @@ $font: "Roboto", Sans-Serif;
 
 @mixin fondo($fondo) {
   background-color: #0f0f0f;
-  
 }
 html,
 body {
@@ -20,7 +19,7 @@ nav {
   height: 150px;
   width: 100%;
   @include fondo(#0f0f0f);
-  
+
   ul {
     float: right;
     margin-right: 20px;
@@ -37,10 +36,10 @@ nav {
         font-family: $font;
         text-transform: uppercase;
         font-weight: bolder;
-        }
       }
     }
   }
+}
 
 main {
   margin: 10px;
@@ -51,6 +50,7 @@ main {
     justify-content: center;
     @include fondo(#0f0f0f);
     color: rgb(145, 27, 27);
+    font-weight: bolder;
   }
 
   h2 {
@@ -81,7 +81,6 @@ aside {
   color: rgb(145, 27, 27);
   font-family: $font;
   box-shadow: 10px 5px 5px rgb(145, 27, 27);
-
 
   .aside-cont {
     display: flex;
@@ -164,7 +163,7 @@ footer {
   grid-row-gap: 30px;
 }
 
-.fc{
+.fc {
   width: fit-content;
 }
 
@@ -186,7 +185,6 @@ footer {
 .item-nosotros {
   justify-content: center;
   background: rgb(36, 30, 30);
-
   margin: 20px 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -194,15 +192,15 @@ footer {
   overflow: hidden;
 }
 
-  .titulonososotros {
-    background-color: rgb(36, 30, 30);
-    color: rgb(145, 27, 27);
-  }
+.titulonososotros {
+  background-color: rgb(36, 30, 30);
+  color: rgb(145, 27, 27);
+}
 
 .promos {
   display: grid;
   justify-content: center;
-  grid-row-gap: 50px;
+  grid-row-gap: 10px;
 }
 
 span {
@@ -222,8 +220,8 @@ span {
   color: rgb(145, 27, 27);
   background-color: #0f0f0f;
   font-size: 50px;
+  font-weight: bolder;
 }
-
 
 .platospopulares {
   display: grid;
@@ -250,7 +248,7 @@ span {
   display: flex;
   background: rgb(36, 30, 30);
   margin-left: 85px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .cont-contactos {
@@ -262,9 +260,8 @@ span {
   input {
     color: red;
     font-family: $font;
-
   }
-  
+
   .formularioreserva {
     display: flex;
     justify-content: center;
@@ -292,8 +289,10 @@ header nav ul li a {
 
 li a.active,
 li a:hover {
-  @include fondo(#0f0f0f);
+  background: white;
   transition: 0.5s;
+  color: #0f0f0f;
+  border-radius: 10px;
 }
 
 .checkbtn {
