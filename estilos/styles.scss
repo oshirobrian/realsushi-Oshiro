@@ -350,6 +350,8 @@ nav ul li a {
   li a.active {
     @include fondo(#0f0f0f);
     color: rgb(145, 27, 27);
+    border-radius: 10px;
+    background: white;
   }
 
   #check:checked ~ ul {
