@@ -224,8 +224,7 @@ span {
   margin-right: 10px;
   overflow: hidden;
 }
-
-.carta {
+.platospopulares .carta {
   display: grid;
   justify-content: center;
   background: rgb(36, 30, 30);
@@ -235,12 +234,10 @@ span {
   border-radius: 5%;
   overflow: hidden;
 }
-
-.opcionesmenu {
+.platospopulares .opcionesmenu {
   background-color: rgb(36, 30, 30);
 }
-
-.subtitulomenu {
+.platospopulares .subtitulomenu {
   display: flex;
   background: rgb(36, 30, 30);
   margin-left: 85px;
