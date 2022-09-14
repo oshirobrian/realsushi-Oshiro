@@ -257,6 +257,10 @@ span {
   justify-content: center;
   grid-row-gap: 15px;
 
+  .leetsmeet {
+    font-size: 30px;
+margin-block-start:10px;  }
+
   input {
     color: red;
     font-family: $font;
@@ -352,7 +356,7 @@ nav ul li a {
     @include fondo(#0f0f0f);
     color: rgb(145, 27, 27);
     border-radius: 10px;
-    background: #FA6F61;
+    background: #fa6f61;
   }
 
   #check:checked ~ ul {
