@@ -289,7 +289,7 @@ header nav ul li a {
 
 li a.active,
 li a:hover {
-  background: white;
+  background: #fa7f7c;
   transition: 0.5s;
   color: #0f0f0f;
   border-radius: 10px;
@@ -324,13 +324,12 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
-}
 
   ul {
     position: fixed;
     width: 100%;
     height: 150vh;
-    margin-top: 10px;
+    margin-top: 15px;
     @include fondo(#0f0f0f);
     top: 150px;
     left: -100%;
@@ -353,9 +352,10 @@ nav ul li a {
     @include fondo(#0f0f0f);
     color: rgb(145, 27, 27);
     border-radius: 10px;
-    background: white;
+    background: #FA6F61;
   }
 
   #check:checked ~ ul {
     left: 0;
   }
+}
