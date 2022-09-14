@@ -12,8 +12,15 @@ body {
   font-family: $font;
   @include fondo(#0f0f0f);
 }
+
 header {
   box-shadow: 10px 5px 5px rgb(145, 27, 27);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  
 }
 nav {
   height: 150px;
@@ -43,6 +50,8 @@ nav {
 
 main {
   margin: 10px;
+  padding-top: 10rem;
+
 
   h1 {
     display: flex;
